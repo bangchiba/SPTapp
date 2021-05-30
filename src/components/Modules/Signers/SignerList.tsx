@@ -1,4 +1,22 @@
+import { useEffect } from 'react';
+// import axios from 'axios';
+import { signerApi } from '../../../api';
+
 const SignerList = () => {
+  useEffect(() => {
+    
+    const getSigners = async () => {
+      try {
+        const data = await signerApi.getSigners();
+        // const data = await axios.get('https://online-test-api.achilles.systems/api/v1/signers', axiosConfig)
+        console.log(data)
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    getSigners();
+  }, [])
+  
   return (
     <table className='mx-auto max-w-4xl w-full whitespace-nowrap rounded-lg bg-white divide-y divide-gray-300 overflow-hidden'>
       <thead className="bg-gray-50">
