@@ -7,7 +7,7 @@ interface MainLayoutProps {
 
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
-    <div className="font-sans text-white">
+    <div className="font-sans">
       <Nav />
         <div className="container sm:mx-auto px-4 pt-16">{children}</div>
     </div>
