@@ -9,7 +9,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <div className="font-sans">
       <Nav />
-        <div className="container sm:mx-auto px-4 pt-16">{children}</div>
+        <div className="container mx-auto max-w-screen-lg shadow-xl px-4 py-16 mt-10">{children}</div>
     </div>
   );
 };
