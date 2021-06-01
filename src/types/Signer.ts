@@ -7,23 +7,27 @@ export interface Signer {
   defaultSignatory: boolean;
 }
 
-type SignatoryType = 'TAXPAYER' | 'AUTHORIZED_REPRESENTATIVE';
-type StatusTaxpayerType = 'ACTIVE' | 'NOT_ACTIVE';
+type SignatoryType = "TAXPAYER" | "AUTHORIZED_REPRESENTATIVE";
+type StatusTaxpayerType = "ACTIVE" | "NOT_ACTIVE";
 
 type TypeSignatoryObject = {
-  [key in SignatoryType]? : string;
-} 
+  [key in SignatoryType]?: string;
+};
 
 type StatusTaxpayerObject = {
-  [key in StatusTaxpayerType]? : string;
-}
+  [key in StatusTaxpayerType]?: string;
+};
 
 export const Signatory: TypeSignatoryObject = {
-  TAXPAYER: 'Wajib Pajak',
-  AUTHORIZED_REPRESENTATIVE: 'Kuasa'
-}
+  TAXPAYER: "Wajib Pajak",
+  AUTHORIZED_REPRESENTATIVE: "Kuasa",
+};
 
 export const StatusTaxpayer: StatusTaxpayerObject = {
-  ACTIVE: 'Aktif',
-  NOT_ACTIVE: 'Tidak Aktif'
+  ACTIVE: "Aktif",
+  NOT_ACTIVE: "Tidak Aktif",
+};
+
+export interface SignerPost {
+  data: Signer;
 }

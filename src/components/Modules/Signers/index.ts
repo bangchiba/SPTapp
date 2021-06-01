@@ -1,1 +1,1 @@
-export { default as SignerList } from './SignerList'
+export { default as SignerList } from './SignerList';

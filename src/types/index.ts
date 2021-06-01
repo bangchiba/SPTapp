@@ -1,1 +1,1 @@
-export * from './Signer'
+export * from './Signer';
