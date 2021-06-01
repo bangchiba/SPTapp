@@ -21,7 +21,7 @@ Intall:
 
 To Start Server:
 
-`yarn dev`  
+`yarn start`  
 
 To Visit App:
 
