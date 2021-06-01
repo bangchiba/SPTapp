@@ -24,7 +24,8 @@ const SignerList = () => {
     }
   };
 
-  const onClickEdit = (id: string) => {
+  const onClickEdit = (data: any) => {
+    console.log('data', data)
     setIsModalOpen(true);
   };
 
@@ -82,7 +83,7 @@ const SignerList = () => {
                   <a
                     className="text-red-600"
                     href="#"
-                    onClick={() => onClickEdit(each.id)}
+                    onClick={() => onClickEdit(each)}
                   >
                     Edit
                   </a>

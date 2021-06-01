@@ -48,8 +48,8 @@ const Form = (props: FormProps) => {
             </span>
           )}
         </div>
-        <div className="flex mt-5">
-          <label className="text-gray-600 w-1/3">Bertindak Sebagai *</label>
+        <div className="flex mt-5 items-center text-gray-600">
+          <label className="text-gray-600 w-1/3 mr-5">Bertindak Sebagai *</label>
           <input
             {...register("signatory")}
             type="radio"
@@ -65,8 +65,8 @@ const Form = (props: FormProps) => {
           />
           Kuasa
         </div>
-        <div className="flex mt-5">
-          <label className="text-gray-600 w-1/3">Status Wajib Pajak *</label>
+        <div className="flex mt-5 items-center text-gray-600">
+          <label className="w-1/3 mr-5">Status Wajib Pajak *</label>
           <input
             {...register("statusTaxpayer")}
             type="radio"
@@ -82,8 +82,8 @@ const Form = (props: FormProps) => {
           />
           Tidak Aktif
         </div>
-        <div className="flex mt-5 mb-10">
-          <input type="checkbox" {...register("defaultSignatory")} className="text-red-600" /> Jadikan
+        <div className="flex mt-5 mb-10 items-center text-gray-600">
+          <input type="checkbox" {...register("defaultSignatory")} className="text-red-600 mr-5" /> Jadikan
           Sebagai Default
         </div>
         <div className="flex flex-row items-center justify-end p-5 bg-white border-t border-gray-200 rounded-bl-lg rounded-br-lg">
