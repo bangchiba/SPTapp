@@ -13,7 +13,7 @@ https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgc
 Installation:
 
 Copy env file: 
-`cp .env.example .env.local`
+`cp .env.example .env`
 
 Intall:
 
